@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between the logo and the text */
+    font-size: 1.5em;
+}
+
+header .logo {
+    height: 50px; /* Adjust the height of the logo as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta-button, .btn {
+    display: inline-block;
+    background-color: #e8491d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover, .btn:hover {
+    background-color: #d14019;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #d14019;
+}
+
+.about, .classes, .contact {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.about p, .contact p, .contact address {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.class-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: space-between; /* Adjust spacing for alignment */
+}
+
+.class-item {
+    flex: 1 1 calc(33.33% - 20px); /* Three items per row on large screens */
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border don't affect width */
+}
+
+/* Medium Screens (Tablet) */
+@media (max-width: 1024px) {
+    .class-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row */
+    }
+}
+
+/* Small Screens (Phone) */
+@media (max-width: 768px) {
+    .class-item {
+        flex: 1 1 100%; /* One item per row */
+    }
+}
+
+.class-item h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.hero {
+    position: relative; /* Establishes a containing block for the pseudo-element */
+    background-image: url('../images/LondonMartialArts-349.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensures text is readable over the image */
+    padding: 100px 0; /* Adjusts the height of the hero section */
+    text-align: center; /* Centers the text horizontally */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2em;
+        gap: 5px; /* Reduce spacing on smaller screens */
+    }
+
+    header .logo {
+        height: 40px; /* Reduce logo size on smaller screens */
+    }
+}
+
+#embedded-code-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+/* Class Navigation List */
+.class-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.class-navigation li {
+    margin: 0;
+}
+
+.class-navigation a {
+    display: inline-block;
+    background-color: #e8491d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.class-navigation a:hover {
+    background-color: #d14019;
+}
+
+/* Embedded Code Section */
+.embedded-code {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #e8491d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #d14019;
+}
