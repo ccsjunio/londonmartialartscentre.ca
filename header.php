@@ -95,6 +95,18 @@
 			}
 		});
 	</script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.querySelector('.menu');
+
+            hamburger.addEventListener('click', () => {
+                menu.classList.toggle('mobile-hidden');
+                menu.classList.toggle('mobile-visible');
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
@@ -106,7 +118,15 @@
             </a>
         </h1>
         <nav>
-            <ul>
+            <!-- Hamburger Icon -->
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <ul class="menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="index.php#about">About Us</a></li>
                 <li><a href="index.php#classes">Classes</a></li>
