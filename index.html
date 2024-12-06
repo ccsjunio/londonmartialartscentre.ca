@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: rgb(205, 138, 19);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Server Test</h1>
+        <p>If you are seeing this page, your server is running correctly!</p>
+        <p><strong>Current Date and Time:</strong> <span id="datetime"></span></p>
+    </div>
+    <script>
+        // Display current date and time
+        const now = new Date();
+        document.getElementById('datetime').textContent = now.toLocaleString();
+    </script>
+</body>
+</html>
