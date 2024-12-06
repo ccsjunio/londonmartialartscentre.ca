@@ -12,6 +12,10 @@
                 <img src="images/email-icon.webp" alt="Email">
             </a>
         </div>
+        <div class="contact-info">
+            <p>190 Wortley Rd, Unit LL4, London, ON, Canada</p>
+            <p><a href="tel:+12269988703">+1 (226) 998-8703</a></p>
+        </div>
     </div>
 </footer>
 </body>
