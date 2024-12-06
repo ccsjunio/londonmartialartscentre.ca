@@ -1,7 +1,7 @@
 /* General Theme Colors */
 :root {
     --primary-color: rgb(205, 138, 19);
-    --secondary-color: #000; /* Black */
+    --secondary-color: #333; /* Black */
     --accent-color: #fff; /* White */
 }
 
@@ -15,7 +15,7 @@ body {
 
 /* Global Button and Link Styles */
 a, .btn, .cta-button, .cookie-popup .btn, .class-navigation a, form button {
-    background-color: var(--primary-color);
+    background-color: transparent;
     color: var(--accent-color); /* White */
     text-decoration: none;
     border-radius: 5px;
@@ -27,7 +27,7 @@ a, .btn, .cta-button, .cookie-popup .btn, .class-navigation a, form button {
 }
 
 a:hover, .btn:hover, .cta-button:hover, .cookie-popup .btn:hover, .class-navigation a:hover, form button:hover {
-    background-color: rgba(205, 138, 19, 0.8); /* Slightly darker shade */
+    background-color: var(--primary-color); /* Slightly darker shade */
     color: var(--accent-color);
 }
 
@@ -38,22 +38,23 @@ a:hover, .btn:hover, .cta-button:hover, .cookie-popup .btn:hover, .class-navigat
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: var(--secondary-color); /* Black background */
+    padding: 10px 20px;
+    color: var(--accent-color); /* White text */
 }
 
 header h1 {
+    background: transparent; /* Removes any background color */
+    color: var(--accent-color); /* Ensures text color matches the theme */
     display: flex;
     align-items: center;
-    gap: 10px; /* Adds space between the logo and the text */
-    font-size: 1.5em;
+    gap: 10px; /* Adds spacing between the logo and text */
 }
 
 /* Style for the title link in the header */
 header h1 a {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Inherits the color from the parent element (white for the header) */
+    text-decoration: none; /* Remove underline from the title link */
+    color: inherit; /* Inherit the text color from the parent */
 }
 
 /* Optional: Add hover effect for the title link */
