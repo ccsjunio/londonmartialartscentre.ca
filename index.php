@@ -1,88 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>London Martial Arts Centre</title>
-    <link rel="stylesheet" href="styles/styles.css">
-	<link rel="icon" href="images/Logo_2024_02_ico.ico" type="image/x-icon">
+<?php 
+	if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    	$referrer = htmlspecialchars($_POST['referrer']); // Sanitize input
+    	// Use the $referrer value as needed (e.g., store it, log it, etc.)
+	}
+	$pageTitle = 'Home'; // Set a custom page title
+	include 'header.php'; 
+?>
 
-	<!-- script for the gymdesk scheduling app -->
-	<script src="https://gymdesk.com/js/widgets.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-		// Event delegation for dynamic content
-		document.body.addEventListener('click', function (event) {
-			// Check if the clicked element is the Confirm Booking button
-			if (
-				event.target && 
-				(event.target.tagName === 'BUTTON' || event.target.closest('button')) &&
-				event.target.textContent.trim() === 'Confirm Booking'
-			) {
-				console.log('Confirm Booking button clicked!');
-				captureFormData();
-			}
-		});
-
-		const observer = new MutationObserver(() => {
-			const button = document.querySelector('.book-form button:contains("Confirm Booking")');
-			if (button) {
-				console.log('Confirm Booking button is now available!');
-				observer.disconnect(); // Stop observing once found
-			}
-		});
-
-		// Start observing changes in the document
-		observer.observe(document.body, { childList: true, subtree: true });
-
-		// Function to capture form data safely
-		function captureFormData() {
-			const form = document.querySelector('.book-form form.checkout');
-			if (form) {
-				const formData = {};
-				const inputs = form.querySelectorAll('input, select, textarea');
-
-				inputs.forEach(input => {
-					formData[input.name] = input.value || '';
-				});
-
-				console.log('Captured Form Data:', formData);
-
-				// Optionally send data to a server
-				// fetch('https://yourserver.com/endpoint', {
-				//     method: 'POST',
-				//     headers: {
-				//         'Content-Type': 'application/json'
-				//     },
-				//     body: JSON.stringify(formData)
-				// }).then(response => response.json())
-				//   .then(data => console.log('Data sent to server:', data))
-				//   .catch(error => console.error('Error sending data:', error));
-			} else {
-				console.warn('Form not found!');
-			}
-		}
-	});
-	</script>
-	
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>
-				<img src="images/Logo_2024_02.png" alt="London Martial Arts Centre Logo" class="logo">
-				London Martial Arts Centre
-			</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#classes">Classes</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
     <section id="home" class="hero">
 		<div class="container">
@@ -100,32 +24,32 @@
     </section>
 
     <section id="classes" class="classes">
-        <div class="container">
-            <h2>Our Classes</h2>
-            <div class="class-list">
-                <div class="class-item">
-                    <h3>Little Dragons (4.5-7 yrs)</h3>
-                    <p>Classes dedicated to fostering respectful, happy, and healthy kids.</p>
-					<a href="#book-trial" class="btn">Book a Trial</a>
-                </div>
-                <div class="class-item">
-                    <h3>Kids (8-12 yrs)</h3>
-                    <p>Programs designed to build confidence and physical skills in a supportive environment.</p>
-					<a href="#book-trial" class="btn">Book a Trial</a>
-                </div>
-                <div class="class-item">
-                    <h3>Adults of All Ages</h3>
-                    <p>Customized martial arts classes that respect your pace, condition, and goals.</p>
-					<a href="#book-trial" class="btn">Book a Trial</a>
-                </div>
-                <div class="class-item">
-                    <h3>My Wellness Formula</h3>
-                    <p>A combination of Tai Chi, Qi Gong, Meditation, Flexibility, and Mobility to improve and balance your life and health.</p>
-					<a href="#book-trial" class="btn">Book a Trial</a>
+		<div class="container">
+			<h2>Our Classes</h2>
+			<div class="class-list">
+				<div class="class-item">
+					<h3>Little Dragons (4.5-7 yrs)</h3>
+					<p>Classes dedicated to fostering respectful, happy, and healthy kids.</p>
+					<a href="#little-dragons-code" class="btn">Book a Trial</a>
 				</div>
-            </div>
-        </div>
-    </section>
+				<div class="class-item">
+					<h3>Kids (8-12 yrs)</h3>
+					<p>Programs designed to build confidence and physical skills in a supportive environment.</p>
+					<a href="#kids-code" class="btn">Book a Trial</a>
+				</div>
+				<div class="class-item">
+					<h3>Adults of All Ages</h3>
+					<p>Customized martial arts classes that respect your pace, condition, and goals.</p>
+					<a href="#adults-code" class="btn">Book a Trial</a>
+				</div>
+				<div class="class-item">
+					<h3>My Wellness Formula</h3>
+					<p>A combination of Tai Chi, Qi Gong, Meditation, Flexibility, and Mobility to improve and balance your life and health.</p>
+					<a href="#wellness-code" class="btn">Book a Trial</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <section id="contact" class="contact">
 		<div class="container">
@@ -133,7 +57,7 @@
 			<p>We love to have new friends and students at our Kung Fu school. Feel free to visit during normal business hours or send us a message below!</p>
 
 			<!-- Contact Form -->
-			<form action="submit-form.php" method="post" class="contact-form">
+			<form id="contact-form" action="submit-form.php" method="post" class="contact-form">
 				<div>
 					<label for="name">Your Name:</label>
 					<input type="text" id="name" name="name" required>
@@ -143,9 +67,20 @@
 					<input type="email" id="email" name="email" required>
 				</div>
 				<div>
+					<label for="phone">Your Phone Number:</label>
+					<input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required>
+				</div>
+				<div>
+					<label for="dob">Date of Birth:</label>
+					<input type="date" id="dob" name="dob" required>
+					<small>Providing your date of birth helps us recommend the most suitable class for your age group.</small>
+				</div>
+				<div>
 					<label for="message">Your Message:</label>
 					<textarea id="message" name="message" rows="5" required></textarea>
 				</div>
+				<!-- Hidden field for the referrer -->
+				<input type="hidden" id="referrer" name="referrer" value="">
 				<button type="submit">Send Message</button>
 			</form>
 
@@ -199,38 +134,151 @@
 		</div>
 	</section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 London Martial Arts Centre. All rights reserved.</p>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>	
+
+	<!-- Cookie Consent Popup -->
+	<div id="cookie-popup" class="cookie-popup">
+		<p>This site uses cookies to enhance your experience. By continuing, you agree to our use of cookies.</p>
+		<button id="accept-cookies" class="btn">Accept</button>
+		<button id="decline-cookies" class="btn">Decline</button>
+	</div>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			// Get the referrer URL
-			const referrer = document.referrer;
+		// Function to get query parameters from the URL
+		function getQueryParam(name) {
+			const urlParams = new URLSearchParams(window.location.search);
+			return urlParams.get(name);
+		}
 
-			// Log the referrer to the console (for debugging)
-			console.log("User came from:", referrer);
-
-			// Optionally display or store the referrer
-			if (referrer) {
-				// Example: Display the referrer in a hidden input field
-				const referrerInput = document.createElement("input");
-				referrerInput.type = "hidden";
-				referrerInput.name = "referrer";
-				referrerInput.value = referrer;
-				
-				// Append to a form, if needed
-				const form = document.querySelector("form");
-				if (form) {
-					form.appendChild(referrerInput);
-				}
+		// Populate the hidden field with the referrer value
+		document.addEventListener('DOMContentLoaded', function () {
+			const referrerValue = getQueryParam('referrer'); // Get the 'referrer' parameter
+			const referrerInput = document.getElementById('referrer'); // Hidden input field
+			if (referrerValue) {
+				referrerInput.value = referrerValue; // Set the hidden input field value
 			}
 		});
 	</script>
 
-	
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Reference the form
+			const form = document.getElementById('contact-form');
+
+			// Function to get the current timestamp
+			function getCurrentTimestamp() {
+				return Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
+			}
+
+			// Listen for form submission
+			form.addEventListener('submit', function (event) {
+				event.preventDefault(); // Prevent the default form submission
+
+				// Construct the URL for the webhook
+				const webhookURL = 'https://hooks.zapier.com/hooks/catch/15596128/2ibmpez/';
+				const formData = new FormData(form); // Collect form data
+				const params = new URLSearchParams();
+
+				// Append form fields as query parameters
+				formData.forEach((value, key) => {
+					params.append(key, value);
+				});
+
+				// Append the current timestamp
+				params.append('timestamp', getCurrentTimestamp());
+
+				// Send the data to the webhook
+				fetch(`${webhookURL}?${params.toString()}`)
+					.then(response => {
+						if (response.ok) {
+							console.log('Data successfully sent to Zapier webhook!');
+							alert('Your message has been successfully sent!');
+							form.reset(); // Reset the form after successful submission
+						} else {
+							console.error('Error with webhook submission:', response.statusText);
+							alert('There was an error sending your message. Please try again.');
+						}
+					})
+					.catch(error => {
+						console.error('Fetch error:', error);
+						alert('There was an error sending your message. Please try again.');
+					});
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const cookiePopup = document.getElementById('cookie-popup');
+			const acceptButton = document.getElementById('accept-cookies');
+			const declineButton = document.getElementById('decline-cookies');
+
+			// Check for cookie consent
+			if (!getCookie('cookieConsent')) {
+				cookiePopup.style.display = 'flex';
+			}
+
+			// Accept Cookies
+			acceptButton.addEventListener('click', function () {
+				setCookie('cookieConsent', 'true', 365);
+				cookiePopup.style.display = 'none';
+			});
+
+			// Decline Cookies
+			declineButton.addEventListener('click', function () {
+				setCookie('cookieConsent', 'false', 365);
+				cookiePopup.style.display = 'none';
+			});
+
+			// Handle form submission
+			const form = document.getElementById('contact-form');
+			// Handle form submission
+			form.addEventListener('submit', async function (event) { // Make the function async
+				if (getCookie('cookieConsent') === 'true') {
+					const formData = new FormData(form);
+					const date = new Date();
+
+					setCookie('name', formData.get('name'), 365);
+					setCookie('email', formData.get('email'), 365);
+					setCookie('phone', formData.get('phone'), 365);
+					setCookie('date', date.toISOString(), 365);
+
+					// Fetch IP address dynamically
+					const ip = await getIp(); 
+					setCookie('ip', ip, 365);
+				}
+			});
+
+			// Utility function to set a cookie
+			function setCookie(name, value, days) {
+				const expires = new Date();
+				expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
+				document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+			}
+
+			// Utility function to get a cookie
+			function getCookie(name) {
+				const cookies = document.cookie.split('; ');
+				for (let i = 0; i < cookies.length; i++) {
+					const [key, value] = cookies[i].split('=');
+					if (key === name) return value;
+				}
+				return null;
+			}
+
+			// Fetch IP address (uses a public API)
+			async function getIp() {
+				try {
+					const response = await fetch('https://api.ipify.org?format=json');
+					const data = await response.json();
+					return data.ip;
+				} catch (error) {
+					console.error('Failed to fetch IP:', error);
+					return '';
+				}
+			}
+		});
+	</script>
 
 </body>
 </html>
