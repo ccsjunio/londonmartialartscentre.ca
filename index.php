@@ -85,9 +85,10 @@
 			</form>
 
 			<!-- Existing Map -->
-			<div class="map-container">
+			<div class="map-and-video">
+				<!-- Embed Map Section Here -->
 				<iframe 
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1160307388626!2d-81.263579!3d42.979896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef2a8ff49b553%3A0x9bb6bc98e3d1223!2s190%20Wortley%20Rd%2C%20London%2C%20ON%20N6C%201J8%2C%20Canada!5e0!3m2!1sen!2sca!4v1234567890!5m2!1sen!2sca" 
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.923245918659!2d-81.25659782323886!3d42.96348627913757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef1f8ff9d5e05%3A0x2e0bc4b0efc8aecd!2s190%20Wortley%20Rd%2C%20London%2C%20ON%20N6C%203P4%2C%20Canada!5e0!3m2!1sen!2sca!4v1699876543210!5m2!1sen!2sca" 
 					width="100%" 
 					height="300" 
 					style="border:0;" 
@@ -95,6 +96,20 @@
 					loading="lazy" 
 					referrerpolicy="no-referrer-when-downgrade">
 				</iframe>
+				
+				<!-- Embedded Video Section -->
+				<div class="video-section">
+					<h4>How to Get to Our Unit</h4>
+					<iframe 
+						width="100%" 
+						height="315" 
+						src="https://www.youtube.com/embed/4dc7vrGiX4E" 
+						title="YouTube video player" 
+						frameborder="0" 
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+						allowfullscreen>
+					</iframe>
+				</div>
 			</div>
 		</div>
 	</section>
