@@ -195,6 +195,39 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Utility function to get a cookie by name
+            function getCookie(name) {
+                const cookies = document.cookie.split('; ');
+                for (let i = 0; i < cookies.length; i++) {
+                    const [key, value] = cookies[i].split('=');
+                    if (key === name) return decodeURIComponent(value);
+                }
+                return null;
+            }
+
+            // Check for the 'name' cookie
+            const visitorName = getCookie('name');
+            if (visitorName) {
+                // Create the welcome back message
+                const welcomeMessage = document.createElement('div');
+                welcomeMessage.id = 'welcome-back-message';
+                welcomeMessage.style.margin = '20px';
+                welcomeMessage.style.fontSize = '1.2em';
+                welcomeMessage.style.color = '#2c3e50';
+                welcomeMessage.textContent = `Welcome back, ${visitorName}!`;
+
+                // Add the message to the top of the body or a specific section
+                const aboutContainer = document.getElementById('about');
+                if (aboutContainer) {
+                    aboutContainer.insertAdjacentElement('beforebegin', welcomeMessage);
+                } else {
+                    document.body.insertAdjacentElement('afterbegin', welcomeMessage);
+                }
+            }
+        });
+    </script>
 </head>
 <body>
 <header>
