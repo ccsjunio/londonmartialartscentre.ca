@@ -723,3 +723,23 @@ footer {
     border-radius: 5px;
     text-align: center;
 }
+
+.book-call {
+    text-align: center;
+    padding: 20px;
+}
+
+.book-call h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.book-call p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.embedded-call iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

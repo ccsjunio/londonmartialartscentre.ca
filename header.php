@@ -251,7 +251,13 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="index.php#about">About Us</a></li>
                 <li><a href="index.php#classes">Classes</a></li>
-                <li><a href="index.php#contact">Contact</a></li>
+                <li class="dropdown">
+                    <a href="index.php#contact" class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="index.php#contact">Contact Us</a>
+                        <a href="book-a-call.php">Book a Call</a>
+                    </div>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">More Info</a>
                     <div class="dropdown-content">
