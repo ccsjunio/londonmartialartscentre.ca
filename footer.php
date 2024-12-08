@@ -13,8 +13,11 @@
             </a>
         </div>
         <div class="contact-info">
-            <p>190 Wortley Rd, Unit LL4, London, ON, Canada</p>
-            <p><a href="tel:+12269988703">+1 (226) 998-8703</a></p>
+            <p><strong>Address:</strong> 190 Wortley Rd, Unit LL4, London, ON, Canada</p>
+            <p><strong>Phone:</strong> <a href="tel:+12269988703">+1 (226) 998-8703</a></p>
+        </div>
+        <div class="policy-links">
+            <a href="privacy-policy.php">Privacy Policy</a>
         </div>
     </div>
 </footer>

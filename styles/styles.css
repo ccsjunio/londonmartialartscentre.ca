@@ -680,3 +680,29 @@ footer {
         display: none; /* Hide menu by default */
     }
 }
+
+.policy-links {
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.policy-links a {
+    color: var(--accent-color); /* White or theme accent color */
+    text-decoration: none;
+}
+
+.policy-links a:hover {
+    text-decoration: underline;
+}
+
+/* Style for links in the privacy policy page */
+.privacy-policy a {
+    color: var(--primary-color); /* Use white or theme color */
+    text-decoration: underline; /* Optional: Underline to indicate a link */
+}
+
+.privacy-policy a:hover {
+    color: var(--accent-color); /* Change to a noticeable color on hover */
+    text-decoration: none; /* Optional: Remove underline on hover */
+}
