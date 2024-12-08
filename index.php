@@ -56,33 +56,50 @@
 			<h2>Contact Us</h2>
 			<p>We love to have new friends and students at our Kung Fu school. Feel free to visit during normal business hours or send us a message below!</p>
 
-			<!-- Contact Form -->
-			<form id="contact-form" action="submit-form.php" method="post" class="contact-form">
-				<div>
-					<label for="name">Your Name:</label>
-					<input type="text" id="name" name="name" required>
+			<div id="form-container">
+				<!-- Contact Form -->
+				<form id="contact-form" action="submit-form.php" method="post" class="contact-form">
+					<div>
+						<label for="name">Name (person insterested in training, even if child):</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div>
+						<label for="phone">Phone Number:</label>
+						<input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required>
+					</div>
+					<div>
+						<label for="dob">Date of Birth (person interested on training, even if child):</label>
+						<input type="date" id="dob" name="dob" required>
+						<small>Providing your date of birth helps us recommend the most suitable class for your age group.</small>
+					</div>
+					<div id="parentField" style="display: none;">
+						<label for="parentName">Parent's Name:</label>
+						<input type="text" id="parentName" name="parentName" required>
+					</div>
+					<div>
+						<label for="message">Your Message:</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+					<input type="hidden" id="ageCategory" name="ageCategory" value="">
+					<!-- Hidden Fields -->
+					<input type="hidden" id="referrer" name="referrer" value="">
+					<input type="hidden" id="queryParams" name="queryParams" value="">
+					<input type="hidden" id="userAgent" name="userAgent" value="">
+					<input type="hidden" id="ipAddress" name="ipAddress" value="">
+					<input type="hidden" id="ageCategory" name="ageCategory" value="">
+					<input type="hidden" id="age" name="age" value="">
+
+					<button type="submit">Send Message</button>
+				</form>
+				<div id="confirmation-message" style="display: none; text-align: center; margin-top: 20px;">
+					<h3>Thank you for contacting us!</h3>
+					<p>Your message has been successfully sent. We will get back to you shortly.</p>
 				</div>
-				<div>
-					<label for="email">Your Email:</label>
-					<input type="email" id="email" name="email" required>
-				</div>
-				<div>
-					<label for="phone">Your Phone Number:</label>
-					<input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required>
-				</div>
-				<div>
-					<label for="dob">Date of Birth:</label>
-					<input type="date" id="dob" name="dob" required>
-					<small>Providing your date of birth helps us recommend the most suitable class for your age group.</small>
-				</div>
-				<div>
-					<label for="message">Your Message:</label>
-					<textarea id="message" name="message" rows="5" required></textarea>
-				</div>
-				<!-- Hidden field for the referrer -->
-				<input type="hidden" id="referrer" name="referrer" value="">
-				<button type="submit">Send Message</button>
-			</form>
+			</div>
 
 			<!-- Existing Map -->
 			<div class="map-and-video">
@@ -179,6 +196,8 @@
 		document.addEventListener('DOMContentLoaded', function () {
 			// Reference the form
 			const form = document.getElementById('contact-form');
+			const confirmationMessage = document.getElementById('confirmation-message');
+        	const formContainer = document.getElementById('form-container');
 
 			// Function to get the current timestamp
 			function getCurrentTimestamp() {
@@ -209,9 +228,12 @@
 							console.log('Data successfully sent to Zapier webhook!');
 							alert('Your message has been successfully sent!');
 							form.reset(); // Reset the form after successful submission
+							// Hide the form and show the confirmation message
+							form.style.display = 'none';
+                    		confirmationMessage.style.display = 'block';
 						} else {
 							console.error('Error with webhook submission:', response.statusText);
-							alert('There was an error sending your message. Please try again.');
+							console.log('There was an error sending your message. Please try again.');
 						}
 					})
 					.catch(error => {

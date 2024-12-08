@@ -706,3 +706,12 @@ footer {
     color: var(--accent-color); /* Change to a noticeable color on hover */
     text-decoration: none; /* Optional: Remove underline on hover */
 }
+
+#confirmation-message {
+    color: #2c3e50;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}

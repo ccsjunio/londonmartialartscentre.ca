@@ -107,6 +107,94 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dobInput = document.getElementById('dob');
+            const parentField = document.getElementById('parentField');
+            const parentNameInput = document.getElementById('parentName');
+
+            dobInput.addEventListener('change', function () {
+                const dob = new Date(dobInput.value);
+                const today = new Date();
+                const age = today.getFullYear() - dob.getFullYear();
+                const isUnder18 = age < 18 || (age === 18 && today < new Date(dob.setFullYear(today.getFullYear())));
+
+                if (isUnder18) {
+                    parentField.style.display = 'block';
+                    parentNameInput.required = true;
+                } else {
+                    parentField.style.display = 'none';
+                    parentNameInput.required = false;
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const referrerInput = document.getElementById('referrer');
+            const queryParamsInput = document.getElementById('queryParams');
+            const userAgentInput = document.getElementById('userAgent');
+            const ipAddressInput = document.getElementById('ipAddress');
+            const ageCategoryInput = document.getElementById('ageCategory');
+            const dobInput = document.getElementById('dob');
+            const parentField = document.getElementById('parentField');
+            const parentNameInput = document.getElementById('parentName');
+            const ageInput = document.getElementById('age');
+
+            // Populate referrer
+            referrerInput.value = document.referrer || 'Direct Access';
+
+            // Populate query parameters
+            const params = new URLSearchParams(window.location.search);
+            queryParamsInput.value = Object.fromEntries(params.entries());
+
+            // Populate user agent
+            userAgentInput.value = navigator.userAgent;
+
+            // Fetch IP Address
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+                ipAddressInput.value = data.ip;
+            } catch (error) {
+                console.error('Error fetching IP address:', error);
+            }
+
+            // Date of Birth Logic
+            dobInput.addEventListener('change', () => {
+                const dob = new Date(dobInput.value);
+                const today = new Date();
+                let age = today.getFullYear() - dob.getFullYear();
+                const isBirthdayPast = 
+                    today.getMonth() > dob.getMonth() || 
+                    (today.getMonth() === dob.getMonth() && today.getDate() >= dob.getDate());
+                
+                if (!isBirthdayPast) {
+                    age--;
+                }
+
+                ageInput.value = age; // Update the hidden age field
+
+                // Show Parent Name Field if under 18
+                if (age < 18) {
+                    parentField.style.display = 'block';
+                    parentNameInput.required = true;
+                } else {
+                    parentField.style.display = 'none';
+                    parentNameInput.required = false;
+                }
+
+                // Populate Age Category
+                if (age >= 4 && age <= 7) {
+                    ageCategoryInput.value = 'siu-lung';
+                } else if (age >= 8 && age <= 12) {
+                    ageCategoryInput.value = 'kid';
+                } else {
+                    ageCategoryInput.value = 'adult';
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 <header>
