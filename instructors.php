@@ -11,7 +11,7 @@ include 'header.php';
                 <!-- Instructor 1 -->
                 <div class="instructor">
                     <div class="instructor-top">
-                        <img src="images/carlos-ferraz.jpg" alt="Sifu Carlos Ferraz">
+                        <img src="images/carlos-1.jpg" alt="Sifu Carlos Ferraz">
                         <div class="instructor-info">
                             <h3>Sifu Carlos Ferraz</h3>
                             <p>Teaching since 2005. Responsible for bringing a school from the International Traditional Kung Fu Association to Canada, representing the 8th Generation of the Choy Lay Fut style.</p>
@@ -26,28 +26,14 @@ include 'header.php';
                 <!-- Instructor 2 -->
                 <div class="instructor">
                     <div class="instructor-top alternate">
-                        <img src="images/instructor2.jpg" alt="Instructor 2">
+                        <img src="images/marcia-1.jpg" alt="Marcia Shimazaki">
                         <div class="instructor-info">
-                            <h3>Instructor 2</h3>
-                            <p>Brief description about the second instructor.</p>
+                            <h3>Marcia Shimazaki</h3>
+                            <p>Training since 2010. Assistant instructor since 2023, specializing in Choy Lay Fut and Wu Hao Tai Chi styles.</p>
                         </div>
                     </div>
                     <div class="instructor-history">
-                        <p>Details about the second instructor, their achievements, and contributions.</p>
-                    </div>
-                </div>
-
-                <!-- Instructor 3 -->
-                <div class="instructor">
-                    <div class="instructor-top">
-                        <img src="images/instructor3.jpg" alt="Instructor 3">
-                        <div class="instructor-info">
-                            <h3>Instructor 3</h3>
-                            <p>Brief description about the third instructor.</p>
-                        </div>
-                    </div>
-                    <div class="instructor-history">
-                        <p>Details about the third instructor, their achievements, and contributions.</p>
+                        <p>Holds a Dark Brown Belt in Choy Lay Fut and a Yellow Belt in Seven Stars Praying Mantis. Achieved 3rd level in Wu Hao Tai Chi. Marcia began training under Master Marco Serra and Master Marcia Serra in Brazil, continuing the tradition of excellence in martial arts.</p>
                     </div>
                 </div>
 
