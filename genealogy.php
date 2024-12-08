@@ -30,7 +30,7 @@ include 'header.php';
                     </div>
                     <div class="genealogy-item">
                         <h3>5th Generation - Poon Sin</h3>
-                        <img src="images/poon-sin.webp" alt="Poon Sin">
+                        <img src="images/poon-sing.webp" alt="Poon Sin">
                         <p>Poon Sin continued the lineage of Choy Lay Fut, contributing to its global reach.</p>
                     </div>
                     <div class="genealogy-item">
