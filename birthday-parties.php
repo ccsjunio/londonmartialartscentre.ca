@@ -20,6 +20,23 @@ include 'header.php';
 
 		</div>
 	</section>
+    <section id="book-trial" class="book-trial">
+		<div class="container">
+			<h2>Book Your Birthday Party</h2>
+			<p>Choose a class below to book your birthday party.</p>
+
+			<!-- Embedded Codes -->
+			<div id="embedded-code-container">
+				<div id="tiny-program-code" class="embedded-code">
+					<h3>Birthday Party Dates</h3>
+                    <div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="ARemB" attr-program="LOQ5v"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+   
 </main>
 
 <?php include 'footer.php'; ?>
