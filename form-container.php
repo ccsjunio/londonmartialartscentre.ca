@@ -14,8 +14,8 @@
             <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required>
         </div>
         <div>
-            <label for="dob">Date of Birth (person interested on training, even if child):</label>
-            <input type="date" id="dob" name="dob" required>
+            <label for="dob">Date of Birth (person interested in training, even if child):</label>
+            <input type="text" id="dob" name="dob" required>
             <small>Providing your date of birth helps us recommend the most suitable class for your age group.</small>
         </div>
         <div id="parentField" style="display: none;">
