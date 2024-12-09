@@ -989,3 +989,12 @@ div label:hover {
 .services-checkboxes label:hover span {
     color: var(--primary-color); /* Highlight text on hover */
 }
+
+.about h2 {
+    text-align:center;
+    font-size: 2.5em; /* Larger heading for emphasis */
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional for styling */
+    letter-spacing: 2px; /* Adds spacing for a clean look */
+}
