@@ -803,3 +803,149 @@ div label {
 div label:hover {
     color: #333;
 }
+
+.services {
+    text-align: center;
+    padding: 40px 20px; /* Increased padding for better spacing */
+    background-color: var(--accent-color); /* Light background for contrast */
+    color: var(--secondary-color); /* Black text for readability */
+}
+
+.services h2 {
+    font-size: 2.5em; /* Larger heading for emphasis */
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional for styling */
+    letter-spacing: 2px; /* Adds spacing for a clean look */
+}
+
+.services p {
+    margin-bottom: 30px;
+    font-size: 1.2em; /* Slightly larger text for readability */
+    line-height: 1.6;
+    color: #555; /* Subtle contrast for descriptions */
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusts dynamically */
+    gap: 30px; /* Increased gap for better spacing */
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: #fff; /* White background for card contrast */
+    padding: 25px;
+    border: 1px solid #ddd; /* Subtle border for definition */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left; /* Left-aligned text for easy reading */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--secondary-color); /* Black text for emphasis */
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666; /* Softer text color for descriptions */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: var(--primary-color); /* Highlight button with primary color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.service-item .btn:hover {
+    background-color: #a05f14; /* Darker shade for hover effect */
+}
+
+.classes {
+    text-align: center;
+    padding: 40px 20px; /* Increased padding for better spacing */
+    background-color: var(--accent-color); /* Light background for contrast */
+    color: var(--secondary-color); /* Black text for readability */
+}
+
+.classes h2 {
+    font-size: 2.5em; /* Larger heading for emphasis */
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional for styling */
+    letter-spacing: 2px; /* Adds spacing for a clean look */
+}
+
+.classes p {
+    margin-bottom: 30px;
+    font-size: 1.2em; /* Slightly larger text for readability */
+    line-height: 1.6;
+    color: #555; /* Subtle contrast for descriptions */
+}
+
+.class-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusts dynamically */
+    gap: 30px; /* Increased gap for better spacing */
+    margin-top: 30px;
+}
+
+.class-item {
+    background-color: #fff; /* White background for card contrast */
+    padding: 25px;
+    border: 1px solid #ddd; /* Subtle border for definition */
+    border-radius: 10px; /* Smooth rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: left; /* Left-aligned text for easy reading */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-item:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.class-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: var(--secondary-color); /* Black text for emphasis */
+}
+
+.class-item p {
+    font-size: 1em;
+    color: #666; /* Softer text color for descriptions */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.class-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: var(--primary-color); /* Highlight button with primary color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.class-item .btn:hover {
+    background-color: #a05f14; /* Darker shade for hover effect */
+}
