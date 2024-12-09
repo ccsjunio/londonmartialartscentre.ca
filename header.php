@@ -237,6 +237,19 @@
             }
         });
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            flatpickr("#dob", {
+                altInput: true, // Shows a more user-friendly format
+                altFormat: "F j, Y", // Display format (e.g., January 1, 2024)
+                dateFormat: "Y-m-d", // Submission format (e.g., 2024-01-01)
+                maxDate: "today", // Prevent future dates
+                disableMobile: "true", // Ensures the custom picker appears on mobile
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
