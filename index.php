@@ -47,6 +47,11 @@
 					<p>A combination of Tai Chi, Qi Gong, Meditation, Flexibility, and Mobility to improve and balance your life and health.</p>
 					<a href="#wellness-code" class="btn">Book a Trial</a>
 				</div>
+				<div class="class-item">
+					<h3>Tiny Program (3 yrs)</h3>
+					<p>More fun classes introducing concepts of martial arts like balance, organization, following commands, respect, development of motor skills, and laterality.</p>
+					<a href="#tiny-program-code" class="btn">Book a Trial</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -123,6 +128,7 @@
 
 			<!-- Navigation List -->
 			<ul id="class-navigation" class="class-navigation">
+				<li><a href="#tiny-program-code">Tiny Program (3 yrs)</a></li>
 				<li><a href="#little-dragons-code">Little Dragons (4.5-7 yrs)</a></li>
 				<li><a href="#kids-code">Kids (8-12 yrs)</a></li>
 				<li><a href="#adults-code">Adults of All Ages</a></li>
@@ -131,6 +137,10 @@
 
 			<!-- Embedded Codes -->
 			<div id="embedded-code-container">
+				<div id="tiny-program-code" class="embedded-code">
+					<h3>Tiny Program (3 yrs)</h3>
+					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="ty123"></div>
+				</div>
 				<div id="little-dragons-code" class="embedded-code">
 					<h3>Little Dragons (4.5-7 yrs)</h3>
 					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="vQpnn"></div>
