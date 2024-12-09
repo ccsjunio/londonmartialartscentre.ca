@@ -183,15 +183,6 @@ form button:hover {
     justify-content: space-between; /* Adjust spacing for alignment */
 }
 
-.class-item {
-    flex: 1 1 calc(33.33% - 20px); /* Three items per row on large screens */
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-sizing: border-box; /* Ensures padding and border don't affect width */
-}
-
 /* Medium Screens (Tablet) */
 @media (max-width: 1024px) {
     .class-item {
@@ -948,6 +939,21 @@ div label:hover {
 
 .class-item .btn:hover {
     background-color: #a05f14; /* Darker shade for hover effect */
+}
+
+.class-item img.class-image {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    max-height: 200px; /* Limits the maximum height of the image */
+    object-fit: cover; /* Ensures the image fits nicely within the container */
+    border-radius: 10px; /* Matches the card's rounded corners */
+    margin-bottom: 15px; /* Space between image and text */
+    overflow: hidden; /* Prevents the image from overflowing its container */
+    display: block; /* Ensures proper rendering as a block element */
+}
+
+.class-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Container for the checkboxes */

@@ -37,6 +37,7 @@
 			<h2>Our Classes</h2>
 			<div class="class-list">
 				<div class="class-item">
+					<img src="images/little-dragons.jpg" alt="Little Dragons" class="class-image">
 					<h3>Little Dragons (4.5-7 yrs)</h3>
 					<p>At Kung Fu & Tai Chi School, we believe in nurturing the young minds and bodies of our community. 
 						Our 'Little Dragons' (Siu Lung) program is specially designed for children aged 4 to 7, providing 
@@ -44,6 +45,7 @@
 					<a href="#little-dragons-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
+					<img src="images/kids.jpg" alt="Little Dragons" class="class-image">
 					<h3>Kids (8-12 yrs)</h3>
 					<p>At Kung Fu & Tai Chi School, we are dedicated to fostering the development of young minds and bodies. 
 						Our 'Young Warriors' program is tailored for children aged 8 to 12, offering a comprehensive and 
@@ -51,12 +53,14 @@
 					<a href="#kids-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
+					<img src="images/adults.jpg" alt="Adult Classes" class="class-image">
 					<h3>Adults of All Ages</h3>
 					<p>Whether you're seeking to enhance your physical fitness, learn self-defense, or find mental peace, 
 						our adult classes are tailored to meet your needs at any skill level.</p>
 					<a href="#adults-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
+					<img src="images/wellness.jpg" alt="My Wellness Formula" class="class-image">
 					<h3>My Wellness Formula</h3>
 					<p>A unique blend of ancient practices tailored for modern living. Our program combines the serene movements 
 						of Tai Chi (Wu Hao style), the energizing techniques of Qi Gong (Chun'A style), and the calming effects 
@@ -65,6 +69,7 @@
 					<a href="#wellness-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
+					<img src="images/tiny-program.jpg" alt="Tiny Program" class="class-image">
 					<h3>Tiny Program (3 yrs)</h3>
 					<p>More fun classes introducing concepts of martial arts like balance, organization, following commands, respect, development of motor skills, and laterality.</p>
 					<a href="#tiny-program-code" class="btn">Book a Trial</a>
