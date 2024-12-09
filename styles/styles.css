@@ -998,3 +998,21 @@ div label:hover {
     text-transform: uppercase; /* Optional for styling */
     letter-spacing: 2px; /* Adds spacing for a clean look */
 }
+
+.contact h2 {
+    text-align:center;
+    font-size: 2.5em; /* Larger heading for emphasis */
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional for styling */
+    letter-spacing: 2px; /* Adds spacing for a clean look */
+}
+
+.book-trial h2 {
+    text-align:center;
+    font-size: 2.5em; /* Larger heading for emphasis */
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Optional for styling */
+    letter-spacing: 2px; /* Adds spacing for a clean look */
+}
