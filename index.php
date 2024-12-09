@@ -19,7 +19,16 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>At London Martial Arts Centre, we’re more than just a school—we’re a community dedicated to helping individuals of all ages unlock their potential. Through traditional Kung Fu, Tai Chi, and wellness practices, we aim to inspire confidence, discipline, and lifelong growth. Whether you’re here to master martial arts, improve your fitness, or find balance in life, our experienced instructors are here to guide you every step of the way.</p>
+            <p>At London Martial Arts Centre, we’re more than just a school—
+				we’re a community dedicated to helping individuals of all ages unlock their potential. 
+				Through traditional Kung Fu, Tai Chi, and wellness practices, 
+				we aim to inspire confidence, discipline, and lifelong growth. 
+				Whether you’re here to master martial arts, improve your fitness, 
+				or find balance in life, our experienced instructors are here to guide 
+				you every step of the way.</p>
+			<p>We are located at a spacious unit in the Wortley Village, at Old South London, 
+				a charming small village within the city of London, precisely at 190 Wortley Rd, Unit Lower Level LL4.
+			We look forward to meet you and show all the tools we can provide through Martial Arts and Wellness programs.</p>
         </div>
     </section>
 
@@ -29,22 +38,30 @@
 			<div class="class-list">
 				<div class="class-item">
 					<h3>Little Dragons (4.5-7 yrs)</h3>
-					<p>Classes dedicated to fostering respectful, happy, and healthy kids.</p>
+					<p>At Kung Fu & Tai Chi School, we believe in nurturing the young minds and bodies of our community. 
+						Our 'Little Dragons' (Siu Lung) program is specially designed for children aged 4 to 7, providing 
+						a fun and engaging introduction to the world of Kung Fu.</p>
 					<a href="#little-dragons-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
 					<h3>Kids (8-12 yrs)</h3>
-					<p>Programs designed to build confidence and physical skills in a supportive environment.</p>
+					<p>At Kung Fu & Tai Chi School, we are dedicated to fostering the development of young minds and bodies. 
+						Our 'Young Warriors' program is tailored for children aged 8 to 12, offering a comprehensive and 
+						engaging journey into the world of Kung Fu.</p>
 					<a href="#kids-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
 					<h3>Adults of All Ages</h3>
-					<p>Customized martial arts classes that respect your pace, condition, and goals.</p>
+					<p>Whether you're seeking to enhance your physical fitness, learn self-defense, or find mental peace, 
+						our adult classes are tailored to meet your needs at any skill level.</p>
 					<a href="#adults-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
 					<h3>My Wellness Formula</h3>
-					<p>A combination of Tai Chi, Qi Gong, Meditation, Flexibility, and Mobility to improve and balance your life and health.</p>
+					<p>A unique blend of ancient practices tailored for modern living. Our program combines the serene movements 
+						of Tai Chi (Wu Hao style), the energizing techniques of Qi Gong (Chun'A style), and the calming effects 
+						of meditation and breathing exercises. We've carefully designed this program to suit all ages and fitness levels, 
+						ensuring a balanced and accessible path to wellness. Join us as we embark on a journey of self-discovery, harmony, and health.</p>
 					<a href="#wellness-code" class="btn">Book a Trial</a>
 				</div>
 				<div class="class-item">
