@@ -19,7 +19,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>At London Martial Arts Centre, we offer a safe space for all generations to thrive. Our programs are designed to foster self-confidence, discipline, and community.</p>
+            <p>At London Martial Arts Centre, we’re more than just a school—we’re a community dedicated to helping individuals of all ages unlock their potential. Through traditional Kung Fu, Tai Chi, and wellness practices, we aim to inspire confidence, discipline, and lifelong growth. Whether you’re here to master martial arts, improve your fitness, or find balance in life, our experienced instructors are here to guide you every step of the way.</p>
         </div>
     </section>
 
