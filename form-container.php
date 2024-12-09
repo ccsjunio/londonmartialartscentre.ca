@@ -23,6 +23,39 @@
             <input type="text" id="parentName" name="parentName" required>
         </div>
         <div>
+            <label>Interested Services:</label>
+            <div>
+                <label>
+                    <input type="checkbox" name="services[]" value="kung-fu">
+                    Kung Fu Classes
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="services[]" value="wellness">
+                    Wellness Classes
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="services[]" value="private">
+                    Private Classes
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="services[]" value="online">
+                    Online Classes
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="services[]" value="birthday">
+                    Birthday Parties
+                </label>
+            </div>
+        </div>
+        <div>
             <label for="message">Your Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
         </div>
