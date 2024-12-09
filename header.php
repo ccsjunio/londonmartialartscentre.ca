@@ -265,6 +265,15 @@
                 <li><a href="index.php#about">About Us</a></li>
                 <li><a href="index.php#classes">Classes</a></li>
                 <li class="dropdown">
+                    <a href="#services" class="dropbtn">Our Services</a>
+                    <div class="dropdown-content">
+                        <a href="kung-fu-tai-chi-group-classes.php">Kung Fu and Tai Chi Group Classes</a>
+                        <a href="private-classes.php">Private Classes</a>
+                        <a href="online-private-classes.php">Online Private Classes</a>
+                        <a href="birthday-parties.php">Birthday Parties</a>
+                    </div>
+                </li>
+                <li class="dropdown">
                     <a href="index.php#contact" class="dropbtn">Contact</a>
                     <div class="dropdown-content">
                         <a href="index.php#contact">Contact Us</a>

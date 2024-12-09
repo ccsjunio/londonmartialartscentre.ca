@@ -51,6 +51,34 @@
 		</div>
 	</section>
 
+	<section id="services" class="services">
+		<div class="container">
+			<h2>Our Services</h2>
+			<div class="service-list">
+				<div class="service-item">
+					<h3>Kung Fu and Tai Chi Group Classes</h3>
+					<p>Experience the benefits of traditional martial arts training in a group setting, building community and discipline together.</p>
+					<a href="kung-fu-tai-chi-group-classes.php" class="btn">Learn More</a>
+				</div>
+				<div class="service-item">
+					<h3>Private Classes</h3>
+					<p>Get personalized attention and a tailored curriculum to help you achieve your specific goals.</p>
+					<a href="private-classes.php" class="btn">Learn More</a>
+				</div>
+				<div class="service-item">
+					<h3>Online Private Classes</h3>
+					<p>Enjoy the flexibility of learning martial arts from the comfort of your home with our online private sessions.</p>
+					<a href="online-private-classes.php" class="btn">Learn More</a>
+				</div>
+				<div class="service-item">
+					<h3>Birthday Parties</h3>
+					<p>Make your special day unforgettable with our exciting martial arts-themed birthday party packages.</p>
+					<a href="birthday-parties.php" class="btn">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
     <section id="contact" class="contact">
 		<div class="container">
 			<h2>Contact Us</h2>
