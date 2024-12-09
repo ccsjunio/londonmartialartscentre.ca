@@ -131,12 +131,6 @@
 		</div>
 	</section>
 
-	<section id="book-call" class="book-call">
-		<!-- Motion embed begin -->
-		<iframe src="https://app.usemotion.com/meet/londonmartialartscentre/info" title="Motion Booking Page" width="100%" height="840px" frameborder="0"></iframe>
-		<!-- Motion embed end -->
-	</section>
-
 	<section id="book-trial" class="book-trial">
 		<div class="container">
 			<h2>Book Your Free Trial</h2>
