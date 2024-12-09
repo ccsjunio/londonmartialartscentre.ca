@@ -24,34 +24,26 @@
         </div>
         <div>
             <label>Interested Services:</label>
-            <div>
+            <div class="services-checkboxes">
                 <label>
                     <input type="checkbox" name="services[]" value="kung-fu">
-                    Kung Fu Classes
+                    <span>Kung Fu Classes</span>
                 </label>
-            </div>
-            <div>
                 <label>
                     <input type="checkbox" name="services[]" value="wellness">
-                    Wellness Classes
+                    <span>Wellness Classes</span>
                 </label>
-            </div>
-            <div>
                 <label>
                     <input type="checkbox" name="services[]" value="private">
-                    Private Classes
+                    <span>Private Classes</span>
                 </label>
-            </div>
-            <div>
                 <label>
                     <input type="checkbox" name="services[]" value="online">
-                    Online Classes
+                    <span>Online Classes</span>
                 </label>
-            </div>
-            <div>
                 <label>
                     <input type="checkbox" name="services[]" value="birthday">
-                    Birthday Parties
+                    <span>Birthday Parties</span>
                 </label>
             </div>
         </div>

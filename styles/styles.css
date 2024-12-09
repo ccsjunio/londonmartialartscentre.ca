@@ -949,3 +949,43 @@ div label:hover {
 .class-item .btn:hover {
     background-color: #a05f14; /* Darker shade for hover effect */
 }
+
+/* Container for the checkboxes */
+.services-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 15px; /* Space between checkboxes */
+    margin-top: 15px;
+}
+
+.services-checkboxes label {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-checkboxes label:hover {
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.services-checkboxes label input {
+    margin-right: 10px; /* Space between checkbox and label text */
+    width: 20px;
+    height: 20px;
+}
+
+.services-checkboxes label span {
+    font-size: 1em;
+    color: #333; /* Dark text for readability */
+}
+
+.services-checkboxes label:hover span {
+    color: var(--primary-color); /* Highlight text on hover */
+}
