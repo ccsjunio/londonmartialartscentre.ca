@@ -161,7 +161,7 @@
 			<div id="embedded-code-container">
 				<div id="tiny-program-code" class="embedded-code">
 					<h3>Tiny Program (3 yrs)</h3>
-					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="ty123"></div>
+					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="rkwWE"></div>
 				</div>
 				<div id="little-dragons-code" class="embedded-code">
 					<h3>Little Dragons (4.5-7 yrs)</h3>
