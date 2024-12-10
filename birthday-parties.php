@@ -6,9 +6,39 @@ include 'header.php';
 <main>
     <section class="service-detail">
         <div class="container">
-            <h2>Birthday Parties</h2>
-            <p>Experience the best in traditional Kung Fu and Tai Chi group training. Our classes are designed to build confidence, discipline, and community in a supportive and fun environment.</p>
-            <p>Whether you are looking to improve your fitness, learn self-defense, or explore mindfulness practices through Tai Chi, our group classes cater to all levels and goals.</p>
+            <h2>Make Your Child's Birthday Unforgettable!</h2>
+            <p>
+                Host your child's birthday party at the London Martial Arts Centre and make it a day to remember! Our unique birthday package combines fun, learning, and celebration in a safe and exciting environment.
+            </p>
+
+            <div class="birthday-details">
+                <h3>Here's What’s Included:</h3>
+                <ul>
+                    <li>Up to 20 children can attend the party.</li>
+                    <li>A 50-minute Kung Fu class led by our experienced instructors.</li>
+                    <li>Exclusive use of our martial arts school during the party.</li>
+                    <li>Post-party cleaning is handled by us.</li>
+                </ul>
+
+                <h3>Pricing and Booking:</h3>
+                <p>
+                    <strong>Price:</strong> CAD 199 + HST (paid in advance)<br>
+                    This price includes all the features listed above.
+                </p>
+
+                <h3>How It Works:</h3>
+                <ul>
+                    <li>You bring the food, drinks, decorations, and any other party items you need.</li>
+                    <li>You can arrive 30 minutes before the scheduled party time to set up.</li>
+                </ul>
+
+                <h3>Ready to Book?</h3>
+                <p>
+                    Don't wait to secure your child's special day! Use the booking form below to reserve your spot. Spaces fill up quickly, so book today!
+                </p>
+
+                <a href="#booking-section" class="btn">Book Now</a>
+            </div>
         </div>
     </section>
     <section id="contact" class="contact">
@@ -23,7 +53,12 @@ include 'header.php';
     <section id="book-trial" class="book-trial">
 		<div class="container">
 			<h2>Book Your Birthday Party</h2>
-			<p>Choose a class below to book your birthday party.</p>
+			<p>Choose a slot below to book your birthday party.</p>
+
+            <!-- Agreement Link -->
+            <p>
+                <a href="birthday-party-agreement.php" class="agreement-link">Review Our Birthday Party Agreement</a>
+            </p>
 
 			<!-- Embedded Codes -->
 			<div id="embedded-code-container">

@@ -1022,3 +1022,77 @@ div label:hover {
     text-transform: uppercase; /* Optional for styling */
     letter-spacing: 2px; /* Adds spacing for a clean look */
 }
+
+/* General Styling for Birthday Parties */
+.service-detail {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.service-detail h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #444;
+}
+
+.service-detail p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.birthday-details {
+    text-align: left;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.birthday-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.birthday-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.birthday-details ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.birthday-details strong {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.birthday-details .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: rgb(205, 138, 19);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.birthday-details .btn:hover {
+    background-color: #a05f14;
+}
