@@ -317,6 +317,7 @@
                         <a href="instructors.php">Instructors</a>
                     </div>
                 </li>
+                <li><a href="https://londonmartialartscentre.gymdesk.com/login">Members Area</a></li>
             </ul>
         </nav>
     </div>
