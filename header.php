@@ -52,7 +52,7 @@
 
 		const observer = new MutationObserver(() => {
 			// Find all buttons in the .book-form
-			const buttons = document.querySelectorAll('.book-form button');
+			const buttons = document.querySelectorAll('.book button');
 
 			// Loop through buttons to find one with the specific text
 			buttons.forEach((button) => {
@@ -254,6 +254,8 @@
             }
         });
     </script>
+   
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
