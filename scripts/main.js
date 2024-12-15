@@ -159,3 +159,56 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Reference the form
+    const form = document.getElementById('contact-form');
+    const confirmationMessage = document.getElementById('confirmation-message');
+    const formContainer = document.getElementById('form-container');
+
+    // Function to get the current timestamp
+    function getCurrentTimestamp() {
+        return Math.floor(Date.now() / 1000); // Convert milliseconds to seconds
+    }
+
+    // Listen for form submission
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Construct the URL for the webhook
+        const webhookURL = 'https://hooks.zapier.com/hooks/catch/15596128/2ibmpez/';
+        const formData = new FormData(form); // Collect form data
+        const params = new URLSearchParams();
+
+        // Append form fields as query parameters
+        formData.forEach((value, key) => {
+            params.append(key, value);
+        });
+
+        // Append the current timestamp
+        params.append('timestamp', getCurrentTimestamp());
+
+        // Send the data to the webhook
+        fetch(`${webhookURL}?${params.toString()}`)
+            .then(response => {
+                if (response.ok) {
+                    console.log('Data successfully sent to Zapier webhook!');
+                    alert('Your message has been successfully sent!');
+                    form.reset(); // Reset the form after successful submission
+                    // Hide the form and show the confirmation message
+                    form.style.display = 'none';
+                    confirmationMessage.style.display = 'block';
+                } else {
+                    console.error('Error with webhook submission:', response.statusText);
+                    console.log('There was an error sending your message. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                alert('There was an error sending your message. Please try again.');
+            });
+        
+        window.location.href = 'thank-you.php';
+   
+    });
+});
