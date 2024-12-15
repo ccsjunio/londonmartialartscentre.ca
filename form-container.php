@@ -1,6 +1,6 @@
 <div id="form-container">
     <!-- Contact Form -->
-    <form id="contact-form" action="submit-form.php" method="post" class="contact-form">
+    <form id="contact-form" action="thank-you.php" method="post" class="contact-form">
         <div>
             <label for="name">Name (person insterested in training, even if child):</label>
             <input type="text" id="name" name="name" required>
