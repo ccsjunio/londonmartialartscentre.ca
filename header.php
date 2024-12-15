@@ -9,6 +9,7 @@
     <script src="scripts/main.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://gymdesk.com/js/widgets.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
