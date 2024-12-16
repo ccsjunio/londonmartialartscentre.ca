@@ -1,3 +1,15 @@
+<?php
+// Get the protocol (http or https)
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+
+// Get the host (domain name)
+$domain = $_SERVER['HTTP_HOST'];
+
+// Combine to get the full domain URL
+$currentDomain = $protocol . "://" . $domain;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

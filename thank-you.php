@@ -8,7 +8,7 @@ include 'header.php';
         <div class="container">
             <h2>Thank You!</h2>
             <p>We’ve received your message and will get back to you as soon as possible.</p>
-            <p>If you have any further questions, feel free to <a href="#contact" class="link">contact us</a> again.</p>
+            <p>If you have any further questions, feel free to <a href="<?php echo $currentDomain;?>#contact" class="link">contact us</a> again.</p>
             <a href="index.php" class="btn">Back to Home</a>
         </div>
     </section>

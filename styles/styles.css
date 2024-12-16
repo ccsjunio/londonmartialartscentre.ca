@@ -1135,3 +1135,13 @@ div label:hover {
 .thank-you .btn:hover {
     background-color: #a05f14;
 }
+
+.thank-you .link {
+    color: #333; /* Set a dark color for better readability */
+    text-decoration: underline; /* Optional: Underline to differentiate */
+}
+
+.thank-you .link:hover {
+    color: #555; /* Slightly lighter color for hover effect */
+    text-decoration: none; /* Optional: Remove underline on hover */
+}
