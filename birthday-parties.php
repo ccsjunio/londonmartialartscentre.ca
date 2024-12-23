@@ -14,22 +14,29 @@ include 'header.php';
             <div class="birthday-details">
                 <h3>Here's What’s Included:</h3>
                 <ul>
-                    <li>Up to 20 children can attend the party.</li>
-                    <li>A 50-minute Kung Fu class led by our experienced instructors.</li>
-                    <li>Exclusive use of our martial arts school during the party.</li>
-                    <li>Post-party cleaning is handled by us.</li>
+                    <li>10 birthday guests</li>
+                    <li>A 2 hour period that includes a 45 minutes Kung Fu class and games</li>
+                    <li>10 Party Invitations</li>
+                    <li>10 VIP's which allow each guest to train at our school for 2 weekd free</li>
+                    <li>Cake cutting with a butterfly sword</li>
+                    <li>Ceremonial gift opening</li>
                 </ul>
 
                 <h3>Pricing and Booking:</h3>
                 <p>
-                    <strong>Price:</strong> CAD 199 + HST (paid in advance)<br>
+                    <strong>Price:</strong> CAD 199 + HST (50% paid in advance)<br>
                     This price includes all the features listed above.
+                    The remaining amount as well as the cost for additional guests can be paid on the day of the party!
+                </p>
+
+                <p>
+                    For additional guests the cost is CAD10 + HST per guest and the minimum age is 3 years old.
                 </p>
 
                 <h3>How It Works:</h3>
                 <ul>
                     <li>You bring the food, drinks, decorations, and any other party items you need.</li>
-                    <li>You can arrive 30 minutes before the scheduled party time to set up.</li>
+                    <li>We supply 2 folding tables with standard table cloths for the party.</li>
                 </ul>
 
                 <h3>Ready to Book?</h3>
