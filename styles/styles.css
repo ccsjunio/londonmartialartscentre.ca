@@ -1145,3 +1145,28 @@ div label:hover {
     color: #555; /* Slightly lighter color for hover effect */
     text-decoration: none; /* Optional: Remove underline on hover */
 }
+
+/* Style for the unordered lists in private-class-details */
+/* Style for the unordered lists in private-class-details */
+.private-class-details ul {
+    list-style-type: disc; /* Ensures bullet points are visible */
+    margin: 0 auto; /* Centers the entire list within its parent container */
+    padding: 0; /* Remove extra padding */
+    text-align: left; /* Aligns list items to the left */
+    max-width: 800px; /* Optional: Constrain the width for better readability */
+}
+
+.private-class-details ul li {
+    font-size: 1.1em; /* Slightly larger text for readability */
+    line-height: 1.6; /* Adds spacing between list items */
+    margin-bottom: 10px; /* Space below each list item */
+    color: #333; /* Text color for better readability */
+}
+
+.private-class-details {
+    text-align: center; /* Centers headings and paragraphs */
+}
+
+.private-class-details ul {
+    text-align: left; /* Overrides parent alignment for the list */
+}
