@@ -9,7 +9,13 @@
 
 
     <section id="home" class="hero">
-		<div class="container">
+		<div class="video-background">
+			<video autoplay muted loop playsinline poster="images/LondonMartialArts-349.jpg">
+				<source src="images/hero-video-3.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="hero-content">
 			<h2>Welcome to London Martial Arts Centre<br/>KIDS - ADULTS - SENIORS</h2>
 			<p>Your journey to self-discipline and wellness begins here.</p>
 			<a href="#book-trial" class="cta-button">Book a Free Trial</a>

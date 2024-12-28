@@ -98,21 +98,7 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
 
-.hero h2 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
 
 /* Buttons */
 .cta-button, .btn {
@@ -209,32 +195,7 @@ footer {
     padding: 10px 0;
 }
 
-.hero {
-    position: relative; /* Establishes a containing block for the pseudo-element */
-    background-image: url('../images/LondonMartialArts-349.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* Ensures text is readable over the image */
-    padding: 100px 0; /* Adjusts the height of the hero section */
-    text-align: center; /* Centers the text horizontally */
-}
 
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 1; /* Lower than the dropdown */
-}
-
-.hero .container {
-    position: relative;
-    z-index: 2;
-}
 
 @media (max-width: 768px) {
     header h1 {
@@ -1169,4 +1130,73 @@ div label:hover {
 
 .private-class-details ul {
     text-align: left; /* Overrides parent alignment for the list */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensure text is readable */
+    text-align: center;
+    overflow: hidden; /* Prevents video overflow */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ensures video doesn’t overflow */
+    z-index: 1; /* Place it behind the content */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire hero section */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Place content above the video */
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better contrast */
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for better contrast */
+}
+
+.hero-content .btn {
+    background-color: rgba(205, 138, 19, 0.9); /* Semi-transparent button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #a05f14;
+}
+
+@media (max-width: 768px) {
+    .video-background {
+        display: none; /* Hide video on small screens */
+    }
+
+    .hero {
+        background: url('images/LondonMartialArts-349.jpg') no-repeat center center/cover;
+    }
 }
