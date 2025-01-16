@@ -46,33 +46,33 @@ $currentDomain = $protocol . "://" . $domain;
 
             <!-- Navigation Menu -->
             <ul class="menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="index.php#about">About Us</a></li>
-                <li><a href="index.php#classes">Classes</a></li>
+                <li><a href="index.php" id="menu-item-home">Home</a></li>
+                <li><a href="index.php#about" id="menu-item-about-us">About Us</a></li>
+                <li><a href="index.php#classes" id="menu-item-classes">Classes</a></li>
                 <li class="dropdown">
-                    <a href="#services" class="dropbtn">Our Services</a>
+                    <a href="#services" class="dropbtn" id="menu-item-our-services">Our Services</a>
                     <div class="dropdown-content">
-                        <a href="kung-fu-tai-chi-group-classes.php">Kung Fu and Tai Chi Group Classes</a>
-                        <a href="private-classes.php">Private Classes</a>
-                        <a href="online-private-classes.php">Online Private Classes</a>
-                        <a href="birthday-parties.php">Birthday Parties</a>
+                        <a href="kung-fu-tai-chi-group-classes.php" id="menu-item-kung-fu-taichi-group-classes">Kung Fu and Tai Chi Group Classes</a>
+                        <a href="private-classes.php" id="menu-item-private-classes">Private Classes</a>
+                        <a href="online-private-classes.php" id="menu-item-online-private-classes">Online Private Classes</a>
+                        <a href="birthday-parties.php" id="menu-item-birthday-parties">Birthday Parties</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="index.php#contact" class="dropbtn">Contact</a>
                     <div class="dropdown-content">
-                        <a href="index.php#contact">Contact Us</a>
-                        <a href="book-a-call.php">Book a Call</a>
+                        <a href="index.php#contact" id="menu-item-contact-us">Contact Us</a>
+                        <a href="book-a-call.php" id="menu-item-book-call">Book a Call</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">More Info</a>
                     <div class="dropdown-content">
-                        <a href="genealogy.php">Genealogy</a>
-                        <a href="instructors.php">Instructors</a>
+                        <a href="genealogy.php" id="menu-item-genealogy">Genealogy</a>
+                        <a href="instructors.php" id="menu-item-instructors">Instructors</a>
                     </div>
                 </li>
-                <li><a href="https://londonmartialartscentre.gymdesk.com/login">Members Area</a></li>
+                <li><a href="https://londonmartialartscentre.gymdesk.com/login" id="menu-item-member-area">Members Area</a></li>
             </ul>
         </nav>
     </div>

@@ -44,7 +44,7 @@ include 'header.php';
                     Don't wait to secure your child's special day! Use the booking form below to reserve your spot. Spaces fill up quickly, so book today!
                 </p>
 
-                <a href="#booking-section" class="btn">Book Now</a>
+                <a href="#booking-section" class="btn" id="button-birthday-parties-book-now">Book Now</a>
             </div>
         </div>
     </section>

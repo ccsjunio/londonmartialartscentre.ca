@@ -36,7 +36,7 @@ include 'header.php';
                     Private classes are available for both individuals and small groups. Contact us to discuss pricing and scheduling options that work best for you.
                 </p>
 
-                <a href="#contact" class="btn">Contact Us to Learn More</a>
+                <a href="#contact" class="btn" id="button-private-classes-contact-us">Contact Us to Learn More</a>
             </div>
         </div>
     </section>

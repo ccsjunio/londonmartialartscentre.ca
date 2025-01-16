@@ -60,7 +60,7 @@
         <input type="hidden" id="ageCategory" name="ageCategory" value="">
         <input type="hidden" id="age" name="age" value="">
 
-        <button type="submit">Send Message</button>
+        <button type="submit" id="button-form-contact-us-submit">Send Message</button>
     </form>
     <div id="confirmation-message" style="display: none; text-align: center; margin-top: 20px;">
         <h3>Thank you for contacting us!</h3>

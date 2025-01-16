@@ -22,7 +22,7 @@ include 'header.php';
             </ul>
 
             <p>By proceeding with the booking, you confirm that you have read, understood, and agreed to the terms and conditions outlined above.</p>
-            <a href="birthday-parties.php#booking-section" class="btn">Back to Booking</a>
+            <a href="birthday-parties.php#booking-section" class="btn" id="button-birthday-back-to-booking">Back to Booking</a>
         </div>
     </section>
 </main>
