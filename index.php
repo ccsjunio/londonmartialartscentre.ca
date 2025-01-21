@@ -174,7 +174,7 @@
 			<!-- Embedded Codes -->
 			<div id="embedded-code-container">
 				<div id="tiny-program-code" class="embedded-code">
-					<h3>Tiny Program (3 & 4 yrs)<div id="button-booking-confirmation-tiny"></div></h3>
+					<h3>Tiny Program (3 & 4 yrs)<div id="button-booking-confirmation-tiny">&nbsp;</div></h3>
 					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="rkwWE">
 						<script>
 							// Parent window code
@@ -197,7 +197,7 @@
 					</div>
 				</div>
 				<div id="little-dragons-code" class="embedded-code">
-					<h3>Little Dragons (4.5-7 yrs)<div id="button-booking-confirmation-siu-lung"></div></h3>
+					<h3>Little Dragons (4.5-7 yrs)<div id="button-booking-confirmation-siu-lung">&nbsp;</div></h3>
 					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="vQpnn">
 						<script>
 							// Parent window code
@@ -221,7 +221,7 @@
 					</div>
 				</div>
 				<div id="kids-code" class="embedded-code">
-					<h3>Kids (8-12 yrs)<div id="button-booking-confirmation-kids"></div></h3>
+					<h3>Kids (8-12 yrs)<div id="button-booking-confirmation-kids">&nbsp;</div></h3>
 					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="q51gp">
 						<script>
 							// Parent window code
@@ -245,7 +245,7 @@
 					</div>
 				</div>
 				<div id="adults-code" class="embedded-code">
-					<h3>Adults of All Ages<div id="button-booking-confirmation-adults"></div></h3>
+					<h3>Adults of All Ages<div id="button-booking-confirmation-adults">&nbsp;</div></h3>
 					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="kpVeM">
 						<script>
 							// Parent window code
@@ -269,7 +269,7 @@
 					</div>
 				</div>
 				<div id="wellness-code" class="embedded-code">
-					<h3>My Wellness Formula<div id="button-booking-confirmation-wellness"></div></h3>
+					<h3>My Wellness Formula<div id="button-booking-confirmation-wellness">&nbsp;</div></h3>
 					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="GyQY5">
 					<script>
 							// Parent window code
