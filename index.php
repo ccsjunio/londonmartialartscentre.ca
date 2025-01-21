@@ -18,6 +18,9 @@
 		<div class="hero-content">
 			<h2>Welcome to London Martial Arts Centre<br/>KIDS - ADULTS - SENIORS</h2>
 			<p>Your journey to self-discipline and wellness begins here.</p>
+			<h2>New Year New You SALE</h2>
+			<h1>68% OFF</h1>
+			<h2>4 weeks of training + FREE uniform for CAD84 + tax</h2>
 			<a href="#book-trial" class="cta-button" id="button-book-trial-hero">Book a Free Trial</a>
 		</div>
 	</section>
@@ -49,6 +52,7 @@
 						Our 'Little Dragons' (Siu Lung) program is specially designed for children aged 4 to 7, providing 
 						a fun and engaging introduction to the world of Kung Fu.</p>
 					<a href="#little-dragons-code" class="btn" id="button-book-trial-siu-lung">Book a Trial</a>
+					<a href="little-dragons-class" class="btn" id="button-learn-more-siu-lung">Learn More</a>
 				</div>
 				<div class="class-item">
 					<img src="images/kids.jpg" alt="Little Dragons" class="class-image">
@@ -57,6 +61,7 @@
 						Our 'Young Warriors' program is tailored for children aged 8 to 12, offering a comprehensive and 
 						engaging journey into the world of Kung Fu.</p>
 					<a href="#kids-code" class="btn" id="button-book-trial-kids">Book a Trial</a>
+					<a href="kids-class" class="btn" id="button-learn-more-kids">Learn More</a>
 				</div>
 				<div class="class-item">
 					<img src="images/adults.jpg" alt="Adult Classes" class="class-image">
@@ -64,6 +69,7 @@
 					<p>Whether you're seeking to enhance your physical fitness, learn self-defense, or find mental peace, 
 						our adult classes are tailored to meet your needs at any skill level.</p>
 					<a href="#adults-code" class="btn" id="button-book-trial-adults">Book a Trial</a>
+					<a href="adults-class" class="btn" id="button-learn-more-adults">Learn More</a>
 				</div>
 				<div class="class-item">
 					<img src="images/wellness.jpg" alt="My Wellness Formula" class="class-image">
@@ -73,12 +79,14 @@
 						of meditation and breathing exercises. We've carefully designed this program to suit all ages and fitness levels, 
 						ensuring a balanced and accessible path to wellness. Join us as we embark on a journey of self-discovery, harmony, and health.</p>
 					<a href="#wellness-code" class="btn" id="button-book-trial-wellness">Book a Trial</a>
+					<a href="welness-class" class="btn" id="button-learn-more-wellness">Learn More</a>
 				</div>
 				<div class="class-item">
 					<img src="images/tiny-program.jpg" alt="Tiny Program" class="class-image">
 					<h3>Tiny Program (3 yrs)</h3>
 					<p>More fun classes introducing concepts of martial arts like balance, organization, following commands, respect, development of motor skills, and laterality.</p>
 					<a href="#tiny-program-code" class="btn" id="button-book-trial-tiny">Book a Trial</a>
+					<a href="tiny-class" class="btn" id="button-learn-more-tiny">Learn More</a>
 				</div>
 			</div>
 		</div>
@@ -156,34 +164,109 @@
 
 			<!-- Navigation List -->
 			<ul id="class-navigation" class="class-navigation">
-				<li><a href="#tiny-program-code">Tiny Program (3 yrs)</a></li>
-				<li><a href="#little-dragons-code">Little Dragons (4.5-7 yrs)</a></li>
-				<li><a href="#kids-code">Kids (8-12 yrs)</a></li>
-				<li><a href="#adults-code">Adults of All Ages</a></li>
-				<li><a href="#wellness-code">My Wellness Formula</a></li>
+				<li><a href="#tiny-program-code" id="button-anchor-tiny">Tiny Program (3 yrs)</a></li>
+				<li><a href="#little-dragons-code" id="button-anchor-siu-lung">Little Dragons (4.5-7 yrs)</a></li>
+				<li><a href="#kids-code" id="button-anchor-kids">Kids (8-12 yrs)</a></li>
+				<li><a href="#adults-code" id="button-anchor-adults">Adults of All Ages</a></li>
+				<li><a href="#wellness-code" id="button-anchor-wellness">My Wellness Formula</a></li>
 			</ul>
 
 			<!-- Embedded Codes -->
 			<div id="embedded-code-container">
 				<div id="tiny-program-code" class="embedded-code">
-					<h3>Tiny Program (3 yrs)</h3>
-					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="rkwWE"></div>
+					<h3>Tiny Program (3 & 4 yrs)<div id="button-booking-confirmation-tiny"></div></h3>
+					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="rkwWE">
+						<script>
+							// Parent window code
+							window.addEventListener('message', (event) => {
+							// Verify the origin of the message to ensure it's from a trusted source
+							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
+								console.log('Message received from iframe:', event.data);
+								// click a fake confirmation button
+								document.getElementById('button-booking-confirmation-tiny').click();
+
+							} else {
+								console.warn('Received message from unknown origin(1):', event.origin);
+							}
+							});
+						</script>
+					</div>
 				</div>
 				<div id="little-dragons-code" class="embedded-code">
-					<h3>Little Dragons (4.5-7 yrs)</h3>
-					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="vQpnn"></div>
+					<h3>Little Dragons (4.5-7 yrs)<div id="button-booking-confirmation-siu-lung"></div></h3>
+					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="vQpnn">
+						<script>
+							// Parent window code
+							window.addEventListener('message', (event) => {
+							// Verify the origin of the message to ensure it's from a trusted source
+							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
+								console.log('Message received from iframe:', event.data);
+								// click a fake confirmation button
+								document.getElementById('button-booking-confirmation-siu-lung').click();
+
+							} else {
+								console.warn('Received message from unknown origin(1):', event.origin);
+							}
+							});
+						</script>
+					</div>
 				</div>
 				<div id="kids-code" class="embedded-code">
-					<h3>Kids (8-12 yrs)</h3>
-					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="q51gp"></div>
+					<h3>Kids (8-12 yrs)<div id="button-booking-confirmation-kids"></div></h3>
+					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="q51gp">
+						<script>
+							// Parent window code
+							window.addEventListener('message', (event) => {
+							// Verify the origin of the message to ensure it's from a trusted source
+							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
+								console.log('Message received from iframe:', event.data);
+								// click a fake confirmation button
+								document.getElementById('button-booking-confirmation-kids').click();
+
+							} else {
+								console.warn('Received message from unknown origin(1):', event.origin);
+							}
+							});
+						</script>
+					</div>
 				</div>
 				<div id="adults-code" class="embedded-code">
-					<h3>Adults of All Ages</h3>
-					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="kpVeM"></div>
+					<h3>Adults of All Ages<div id="button-booking-confirmation-adults"></div></h3>
+					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="kpVeM">
+						<script>
+							// Parent window code
+							window.addEventListener('message', (event) => {
+							// Verify the origin of the message to ensure it's from a trusted source
+							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
+								console.log('Message received from iframe:', event.data);
+								// click a fake confirmation button
+								document.getElementById('button-booking-confirmation-adults').click();
+
+							} else {
+								console.warn('Received message from unknown origin(1):', event.origin);
+							}
+							});
+						</script>
+					</div>
 				</div>
 				<div id="wellness-code" class="embedded-code">
-					<h3>My Wellness Formula</h3>
-					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="GyQY5"></div>
+					<h3>My Wellness Formula<div id="button-booking-confirmation-wellness"></div></h3>
+					<div class="maonrails-schedule" attr-gym="AnM4j" attr-schedule="l4kWj" attr-program="GyQY5">
+					<script>
+							// Parent window code
+							window.addEventListener('message', (event) => {
+							// Verify the origin of the message to ensure it's from a trusted source
+							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
+								console.log('Message received from iframe:', event.data);
+								// click a fake confirmation button
+								document.getElementById('button-booking-confirmation-wellness').click();
+
+							} else {
+								console.warn('Received message from unknown origin(1):', event.origin);
+							}
+							});
+						</script>
+					</div>
 				</div>
 			</div>
 		</div>
