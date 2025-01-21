@@ -183,8 +183,12 @@
 							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
 								console.log('Message received from iframe:', event.data);
 								// click a fake confirmation button
-								document.getElementById('button-booking-confirmation-tiny').click();
-
+								if(event.data=="booking confirmed"){
+									console.log("clicking fake confirmation booking");
+									document.getElementById('button-booking-confirmation-tiny').click();
+								} else {
+									console.warn("this was not a booking confirmation, sorry");
+								}
 							} else {
 								console.warn('Received message from unknown origin(1):', event.origin);
 							}
@@ -202,7 +206,12 @@
 							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
 								console.log('Message received from iframe:', event.data);
 								// click a fake confirmation button
-								document.getElementById('button-booking-confirmation-siu-lung').click();
+								if(event.data=="booking confirmed"){
+									console.log("clicking fake confirmation booking");
+									document.getElementById('button-booking-confirmation-siu-lung').click();
+								} else {
+									console.warn("this was not a booking confirmation, sorry");
+								}
 
 							} else {
 								console.warn('Received message from unknown origin(1):', event.origin);
@@ -221,7 +230,12 @@
 							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
 								console.log('Message received from iframe:', event.data);
 								// click a fake confirmation button
-								document.getElementById('button-booking-confirmation-kids').click();
+								if(event.data=="booking confirmed"){
+									console.log("clicking fake confirmation booking");
+									document.getElementById('button-booking-confirmation-kids').click();
+								} else {
+									console.warn("this was not a booking confirmation, sorry");
+								}
 
 							} else {
 								console.warn('Received message from unknown origin(1):', event.origin);
@@ -240,7 +254,12 @@
 							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
 								console.log('Message received from iframe:', event.data);
 								// click a fake confirmation button
-								document.getElementById('button-booking-confirmation-adults').click();
+								if(event.data=="booking confirmed"){
+									console.log("clicking fake confirmation booking");
+									document.getElementById('button-booking-confirmation-adults').click();
+								} else {
+									console.warn("this was not a booking confirmation, sorry");
+								}
 
 							} else {
 								console.warn('Received message from unknown origin(1):', event.origin);
@@ -259,7 +278,12 @@
 							if (event.origin === 'https://gymdesk.com') { // Replace with the actual origin of the iframe
 								console.log('Message received from iframe:', event.data);
 								// click a fake confirmation button
-								document.getElementById('button-booking-confirmation-wellness').click();
+								if(event.data=="booking confirmed"){
+									console.log("clicking fake confirmation booking");
+									document.getElementById('button-booking-confirmation-wellness').click();
+								} else {
+									console.warn("this was not a booking confirmation, sorry");
+								}
 
 							} else {
 								console.warn('Received message from unknown origin(1):', event.origin);
