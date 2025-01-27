@@ -52,7 +52,7 @@
 						Our 'Little Dragons' (Siu Lung) program is specially designed for children aged 4 to 7, providing 
 						a fun and engaging introduction to the world of Kung Fu.</p>
 					<a href="#little-dragons-code" class="btn" id="button-book-trial-siu-lung">Book a Trial</a>
-					<a href="little-dragons-class" class="btn" id="button-learn-more-siu-lung">Learn More</a>
+					<a href="" class="btn" id="button-learn-more-siu-lung"></a>
 				</div>
 				<div class="class-item">
 					<img src="images/kids.jpg" alt="Little Dragons" class="class-image">
@@ -61,7 +61,7 @@
 						Our 'Young Warriors' program is tailored for children aged 8 to 12, offering a comprehensive and 
 						engaging journey into the world of Kung Fu.</p>
 					<a href="#kids-code" class="btn" id="button-book-trial-kids">Book a Trial</a>
-					<a href="kids-class" class="btn" id="button-learn-more-kids">Learn More</a>
+					<a href="" class="btn" id="button-learn-more-kids"></a>
 				</div>
 				<div class="class-item">
 					<img src="images/adults.jpg" alt="Adult Classes" class="class-image">
@@ -69,7 +69,7 @@
 					<p>Whether you're seeking to enhance your physical fitness, learn self-defense, or find mental peace, 
 						our adult classes are tailored to meet your needs at any skill level.</p>
 					<a href="#adults-code" class="btn" id="button-book-trial-adults">Book a Trial</a>
-					<a href="adults-class" class="btn" id="button-learn-more-adults">Learn More</a>
+					<a href="" class="btn" id="button-learn-more-adults"></a>
 				</div>
 				<div class="class-item">
 					<img src="images/wellness.jpg" alt="My Wellness Formula" class="class-image">
@@ -79,14 +79,14 @@
 						of meditation and breathing exercises. We've carefully designed this program to suit all ages and fitness levels, 
 						ensuring a balanced and accessible path to wellness. Join us as we embark on a journey of self-discovery, harmony, and health.</p>
 					<a href="#wellness-code" class="btn" id="button-book-trial-wellness">Book a Trial</a>
-					<a href="welness-class" class="btn" id="button-learn-more-wellness">Learn More</a>
+					<a href="" class="btn" id="button-learn-more-wellness"></a>
 				</div>
 				<div class="class-item">
 					<img src="images/tiny-program.jpg" alt="Tiny Program" class="class-image">
 					<h3>Tiny Program (3 yrs)</h3>
 					<p>More fun classes introducing concepts of martial arts like balance, organization, following commands, respect, development of motor skills, and laterality.</p>
 					<a href="#tiny-program-code" class="btn" id="button-book-trial-tiny">Book a Trial</a>
-					<a href="tiny-class" class="btn" id="button-learn-more-tiny">Learn More</a>
+					<a href="tiny-class.php" class="btn" id="button-learn-more-tiny">Learn More</a>
 				</div>
 			</div>
 		</div>

@@ -1200,3 +1200,34 @@ div label:hover {
         background: url('images/LondonMartialArts-349.jpg') no-repeat center center/cover;
     }
 }
+
+.program {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.program .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.program-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
