@@ -3,6 +3,20 @@ $pageTitle = 'Birthday Parties';
 include 'header.php'; 
 ?>
 
+<section class="hero">
+    <video class="hero-video" autoplay loop muted playsinline poster="path/to/your/poster.jpg">
+        <source src="/images/BirthdayParty-Murilo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Celebrate with Us!</h1>
+            <p>Make your child's birthday unforgettable at London Martial Arts Centre.</p>
+            <a href="#booking-section" class="btn">Book Now</a>
+        </div>
+    </div>
+</section>
+
 <main>
     <section class="service-detail">
         <div class="container">
@@ -21,6 +35,25 @@ include 'header.php';
                     <li>Cake cutting with a butterfly sword</li>
                     <li>Ceremonial gift opening</li>
                 </ul>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="/images/birthday-party-01.png" loading="lazy" alt="Description of image 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/birthday-party-02.png" loading="lazy" alt="Description of image 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/birthday-party-03.png" loading="lazy" alt="Description of image 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="/images/birthday-party-04.png" loading="lazy" alt="Description of image 4">
+                        </div>
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
 
                 <h3>Pricing and Booking:</h3>
                 <p>
@@ -49,13 +82,57 @@ include 'header.php';
         </div>
     </section>
     <section id="contact" class="contact">
-		<div class="container">
+		<div class="form-container" id="birthday-party-form-container">
 			<h2>Contact Us</h2>
 			<p>Please let us know that you are interested on these services! Leave your contact information below and we will contact you soon!</p>
 
-			<?php include 'form-container.php'; ?>
+			<form id="birthday-party-form" action="https://hooks.zapier.com/hooks/catch/15596128/2fzalop/" method="post">
+                <label for="child-name">Child's Name:</label>
+                <input type="text" id="child-name" name="child_name" required>
+
+                <label for="parent-name">Parent's Name:</label>
+                <input type="text" id="parent-name" name="parent_name" required>
+
+                <label for="contact-email">Contact Email:</label>
+                <input type="email" id="contact-email" name="contact_email" required>
+
+                <label for="contact-phone">Contact Phone Number:</label>
+                <input type="tel" id="contact-phone" name="contact_phone" required>
+
+                <label for="birthday-date">Date of the Birthday:</label>
+                <input type="date" id="birthday-date" name="birthday_date" required>
+
+                <label for="number-invitees">Number of Invitees:</label>
+                <input type="number" id="number-invitees" name="number_invitees" min="1" required>
+
+                <fieldset>
+                    <legend>Optional Services:</legend>
+                    <div class="birthday-checkbox-container">
+                        <input type="checkbox" id="extra_time_before" name="optional_services" value="extra_time_before">
+                        <label for="extra_time_before">Extra Time Before</label>
+                    </div>
+                    <div class="birthday-checkbox-container">
+                        <input type="checkbox" id="extra_time_after" name="optional_services" value="extra_time_after">
+                        <label for="extra_time_after">Extra Time After</label>
+                    </div>
+                    <div class="birthday-checkbox-container">
+                        <input type="checkbox" id="cake_cutting_with_sword" name="optional_services" value="cake_cutting_with_sword">
+                        <label for="cake_cutting_with_sword">Cutting the Cake with a Sword</label>
+                    </div>
+                    <div class="birthday-checkbox-container">
+                        <input type="checkbox" id="picture_with_uniform" name="optional_services" value="picture_with_uniform">
+                        <label for="picture_with_uniform">Picture with Uniform</label>
+                    </div>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
 
 		</div>
+        <div id="confirmation-message"></div>
 	</section>
     <section id="book-trial" class="book-trial">
 		<div class="container">
